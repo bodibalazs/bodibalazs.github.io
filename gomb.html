@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Projekt gomb</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="index.html">Főoldal</a>
+        <a href="keplink.html">Képlink</a>
+        <a href="listak.html">Listák</a>
+        <a href="evszakok.html">Évszakok</a>
+        <a href="urlap.html">Űrlap</a>
+        <a class="active"  href="gomb.html">Gomb</a>
+        <a href="javascript.html">Javascript</a>
+        <a href="pita.html">Pitagorasz</a>
+        <a href="tablazat.html">Táblázat</a>
+    </div>
+
+
+
+    <div class="main">
+        <div class="header">
+            <h1 class="center"></h1>  
+        </div>
+
+        <div style="margin-top: 35px;">
+            <center>
+                <button onclick="megjelen(dog)"><img src="https://findicons.com/files/icons/2770/ios_7_icons/128/dog.png" alt=""></button>
+                <button onclick="megjelen2(cat)"><img src="https://findicons.com/files/icons/2770/ios_7_icons/128/cat.png" alt=""></button>
+                <img style="display: none;" id="dog" src="https://findicons.com/files/icons/2770/ios_7_icons/128/dog.png">
+                <img style="display: none;" id="cat" src="https://findicons.com/files/icons/2770/ios_7_icons/128/cat.png">
+            </center>
+        </div>
+
+
+
+        <script>
+            function megjelen(dog){
+                dog.style.display = "block"
+                cat.style.display = "none"
+            }
+
+
+            function megjelen2(cat){
+                cat.style.display = "block"
+                dog.style.display = "none"
+            }
+        </script>
+
+    </div>
+</body>

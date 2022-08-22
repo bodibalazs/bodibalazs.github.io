@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Projekt pitagorasz</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        div {
+            color:white;
+        }
+
+        .adatok > button {
+            margin: 0 auto 0 auto;
+            display: block;
+        }
+        
+        input {
+            width: 135px;
+            padding: 5px;
+            border: 1px white solid;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+        }
+
+        #aoldal{
+            margin-top: 10px;
+        }
+        
+        img {
+
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: white;
+        }
+
+        span {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="index.html">Főoldal</a>
+        <a href="keplink.html">Képlink</a>
+        <a href="listak.html">Listák</a>
+        <a href="evszakok.html">Évszakok</a>
+        <a href="urlap.html">Űrlap</a>
+        <a href="gomb.html">Gomb</a>
+        <a href="javascript.html">Javascript</a>
+        <a class="active" href="pita.html">Pitagorasz</a>
+        <a href="tablazat.html">Táblázat</a>
+    </div>
+
+
+
+    <div class="main">
+        <div class="header">
+            <h1 class="center">Bódi Balázs</h1>  
+        </div>
+ 
+        <div class="adatok">
+            <img src="https://www.nkp.hu/tankonyv/matematika_9//img/Szaki09_matek/FI_511010902_szakiskola_9_NKP-116b.png?max_width=2048" alt=""> 
+
+            <input id="aoldal" type="number" placeholder="Add meg az A oldalt"><br>
+            <input id="boldal" type="number" placeholder="Add meg a B oldalt"><br>
+            <button onclick="szamolas(aoldal.value, boldal.value)">SZÁMÍTÁS</button><br>
+            <span style="text-align: center;" id="eredmeny"></span>
+        </div>
+
+    </div>
+
+    <script>
+        function szamolas(a, b) {    
+            var eredmeny = Math.sqrt(+a*a + +b*b)
+            document.getElementById('eredmeny').innerHTML = eredmeny
+        }
+    </script>
+</body>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Projekt urlap</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="index.html">Főoldal</a>
+        <a href="keplink.html">Képlink</a>
+        <a href="listak.html">Listák</a>
+        <a href="evszakok.html">Évszakok</a>
+        <a class="active"  href="urlap.html">Űrlap</a>
+        <a href="gomb.html">Gomb</a>
+        <a href="javascript.html">Javascript</a>
+        <a href="pita.html">Pitagorasz</a>
+        <a href="tablazat.html">Táblázat</a>
+    </div>
+
+
+
+    <div class="main">
+        <div class="header">
+            <h1 class="center">Bódi Balázs</h1>  
+        </div>
+
+        <div id="urlap">
+            <form name="rendeles">
+                <h1 id="burger">Burger rendelés</h1>
+
+                <fieldset>
+                    <legend>Adatok</legend>
+                    <p><labe id="name">Név: <input style="margin-left: 36px; width: 250px;" type="text" name="nev">
+                            </label></p>
+                    <p><label id="number">Tel: +36 <input  style="margin-left: 8px; width: 250px;" type="tel" name="telefon" size="10"></label></p>
+                    <p><label id="address">Lakcím: <input  style="margin-left: 16px; width: 250px;" type="tel" name="telefon" size="10"></label></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Méret</legend>
+                    <p><label><input type="radio" name="meret" value="kicsi">kicsi</label></p>
+                    <p><label><input type="radio" name="meret" value="kozepes">közepes</label></p>
+                    <p><label><input type="radio" name="meret" value="nagy">nagy</label></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Hús</legend>
+                    <select>
+                        <option value="szalámi">marha</option>
+                        <option value="sajt">sertés</option>
+                    </select>    
+                </fieldset>
+
+                <fieldset>
+                    <p><label><input type="number" name="mennyiseg"> db</label></p>
+                    <p><label>Személyes kérés: <br><textarea name="egyeb"></textarea></label></p>
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+</body>
